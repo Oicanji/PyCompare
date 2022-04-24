@@ -26,7 +26,7 @@ class ConsoleLog:
     def content(self, message_dict: dict):
         #show each attribute in turn
         for key, value in message_dict.items():
-            if key == "Lines: ":
+            if key == "diff":
                 for line in value:
                     print("\nDifferences:")
                     print(" -"+line[0])

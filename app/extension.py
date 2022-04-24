@@ -2,7 +2,8 @@ import os
 
 class Extension:
 
-    __VALID_EXTENSIONS = ['.csv','.pdf','.xlsx','.xls']
+    #__VALID_EXTENSIONS = ['.csv','.pdf','.xlsx','.xls']
+    __VALID_EXTENSIONS = ['.csv','.pdf']
 
     @staticmethod
     def get(pathname: str):

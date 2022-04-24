@@ -3,14 +3,14 @@ from .consolecolor import Colors
 class Different:
 
     def __init__(self):
-        self.__lines_diff = []
+        self.__diff = []
         self.__num_lines_diff = 0
         self.__is_valid = True
         self.__diff_length = False
 
     def add(self, line1: str, line2: str):
         self.__is_valid = False
-        self.__lines_diff.append((line1, line2))
+        self.__diff.append((line1, line2))
         self.__num_lines_diff += 1
 
     def diff_length_lines(self, lines1: int, lines2: int):
@@ -30,6 +30,6 @@ class Different:
             "Everything is the same? R.":valid,
             "There are more lines between them? R.":length,
             "\n"+Colors.DANGER+"Errors found": errors_found,
-            "Lines: ":self.__lines_diff,
+            "diff":self.__diff,
             "": Colors.RESET
         }

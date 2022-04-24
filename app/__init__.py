@@ -6,10 +6,12 @@ from .extension import Extension
 from .consolelog import ConsoleLog
 
 from .csv import Csv
+from .pdf import Pdf
 
 class App:
     __compare = {
-        ".csv": Csv.compare
+        ".csv": Csv.compare,
+        ".pdf": Pdf.compare
     }
 
     def run():
