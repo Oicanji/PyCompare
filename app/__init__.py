@@ -7,11 +7,13 @@ from .consolelog import ConsoleLog
 
 from .csv import Csv
 from .pdf import Pdf
+from .textFile import TextFile
 
 class App:
     __compare = {
         ".csv": Csv.compare,
-        ".pdf": Pdf.compare
+        ".pdf": Pdf.compare,
+        ".txt": TextFile.compare
     }
 
     def run():

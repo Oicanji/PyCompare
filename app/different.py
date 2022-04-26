@@ -14,7 +14,7 @@ class Different:
         self.__num_lines_diff += 1
 
     def diff_length_lines(self, lines1: int, lines2: int):
-        if lines1 != lines2:
+        if lines1 is not lines2:
             self.__diff_length = True
 
     def show(self):
